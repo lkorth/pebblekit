@@ -20,10 +20,10 @@ import java.util.Map;
  */
 public class PebbleDictionary implements Iterable<PebbleTuple> {
 
-    private static final String KEY = "key";
-    private static final String TYPE = "type";
-    private static final String LENGTH = "length";
-    private static final String VALUE = "value";
+    public static final String KEY = "key";
+    public static final String TYPE = "type";
+    public static final String LENGTH = "length";
+    public static final String VALUE = "value";
 
     protected final Map<Integer, PebbleTuple> tuples = new HashMap<Integer, PebbleTuple>();
 

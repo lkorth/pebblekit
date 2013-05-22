@@ -13,7 +13,7 @@ public final class PebbleTuple {
 
     private static final Charset UTF8 = Charset.forName("UTF-8");
 
-    static final Map<String, TupleType> TYPE_NAMES = new HashMap<String, TupleType>();
+    public static final Map<String, TupleType> TYPE_NAMES = new HashMap<String, TupleType>();
 
     static {
         for (TupleType t : TupleType.values()) {
@@ -21,7 +21,7 @@ public final class PebbleTuple {
         }
     }
 
-    static final Map<Integer, Width> WIDTH_MAP = new HashMap<Integer, Width>();
+    public static final Map<Integer, Width> WIDTH_MAP = new HashMap<Integer, Width>();
 
     static {
         for (Width w : Width.values()) {
@@ -88,7 +88,7 @@ public final class PebbleTuple {
         }
     }
 
-    static enum Width {
+    public static enum Width {
         NONE(0),
         BYTE(1),
         SHORT(2),
@@ -101,7 +101,7 @@ public final class PebbleTuple {
         }
     }
 
-    static enum TupleType {
+    public static enum TupleType {
         BYTES(0),
         STRING(1),
         UINT(2),
